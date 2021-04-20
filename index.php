@@ -321,6 +321,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script type="text/javascript" src="/js/modules/smoothscroll.js"></script>
 <script type="text/javascript" src="/js/modules/forms.js"></script>
 <script type="text/javascript" src="/js/form.js"></script>
+<script type="text/javascript" src="/js/modules/phone-country-code.js"></script>
 
 <!-- Slick JS -->
 <script type="text/javascript" src="/plugins/slick/slick.min.js"></script>

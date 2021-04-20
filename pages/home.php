@@ -248,6 +248,46 @@
 					<a class="h3 phone block text-off-light" href="tel:+919590941221">+91 95909 41221</a>
 				</div>
 			</div>
+			<div class="contact row">
+				<div class="columns small-12 medium-12 large-12">
+					<form class="js_contact_form" onsubmit="event.preventDefault()">
+						<input type="text" name="name" id="js_form_input_name">
+						<input type="text" name="email" id="js_form_input_email">
+						<input type="text" name="organization" id="js_form_input_organization">
+						<textarea name="message" class="js_wysiwyg" id="js_form_input_message"></textarea>
+						<div class="form-row space-min-bottom">
+							<label for="">
+								<span class="small text-uppercase line-height-xlarge opacity-50 cursor-pointer">Phone</span><br>
+								<div style="position: relative; display: flex">
+									<select class="js_phone_country_code" style="position: absolute; top: 0; left: 0; background-color: transparent; color: transparent; width: 26%;">
+										<?php include __DIR__ . '/../inc/phone-country-codes.php' ?>
+									</select>
+									<input type="text" class="no-pointer js_phone_country_code_label" id="js_form_input_phone_country_code" value="+91" tabindex="-1" readonly style="width: 26%">
+									<input class="block" type="text" name="phone-number" id="js_form_input_phone">
+								</div>
+							</label>
+						</div>
+						<input type="checkbox" name="get-notified-of-updates" id="js_form_input_notify_updates">
+						<button type="submit">Get Details</button>
+					</form>
+					<form class="form form-dark js_otp_form" onsubmit="event.preventDefault()">
+						<div class="form-row space-min-bottom">
+							<label for="">
+								<span class="small text-uppercase line-height-xlarge opacity-50 cursor-pointer">We've sent you an OTP. Kindly provide it below.</span><br>
+								<input class="block" type="text" name="otp" id="">
+							</label>
+							<span class="small text-uppercase line-height-small opacity-50 cursor-pointer js_resend_otp hidden">Re-send OTP</span>
+							<span class="small text-uppercase line-height-small opacity-50 cursor-pointer js_try_different_number hidden">Try a different number</span>
+						</div>
+						<div class="form-row space-min-bottom">
+							<label for="">
+								<span class="small text-uppercase line-height-xlarge opacity-50 cursor-pointer">Submit</span><br>
+								<button class="button fill-red-2" type="submit">Verify OTP</button>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 	</section><!-- END : Contact Section -->
 
@@ -299,3 +339,6 @@
 	</script>
 <!-- END : Podcast: Thumbnail Img Template -->
 
+<!-- The following script is required for rich-text editing on the contact form -->
+<script src="https://cdn.tiny.cloud/1/4apvcbnt3l2ekmwcrosyktghz5hboxupu56ctp7xyrdgredl/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script type="text/javascript" src="/js/contact-form.js"></script>
