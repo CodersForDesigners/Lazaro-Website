@@ -1,0 +1,65 @@
+# Things to Do
+
+- [x] What Section Title Animation.
+- [x] Ghost "Z" Background Image.
+- [x] Podcast Section > Spacing the Dots.
+- [x] Style Links & Buttons Hover States.
+- [x] Style Form Input Elmements.
+- [x] Plan Multi-step Form Questions.
+- [x] Animate Multi-step Form.
+- [x] Style Multi-step Form.
+- [x] Footer Social Buttons
+- [x] Radio Button Labels on Mobile
+- [x] What Section -> Implement Next Line
+- [x] Podcast Section Title Animation.
+- [x] Intro Video Update Assets
+- [~] Footer Map Background.
+- [x] Mobile Spacing Section
+- [x] Mobile Spacing Footer Buttons
+- [x] Intro Video Scroll Button
+- [x] Logo Update Assets
+- [x] We provide an end-to-end service. You might recognise us as an amalgam of a Brand Consultancy, Marketing Consultancy, Advertising Agency, 360˚ Design Firm, Accredited Media Firm, Film Production Company, Commercial Photography Studio, Web Development Company, Application Development Company, Social Media & Digital Marketing Agency and many more.
+- [x] SEO Meta Content - Round 1
+- [x] Intro Video Scroll Aninmation Effect
+- [x] Form Toggle Number of Key decision makers field
+- [x] Contact Form Serverside Code + SMPT
+- [x] Intro Video on Reload Fullscreen check
+- [x] Lowercase "LAZARO IS A"
+- [x] White Lazaro Logo swap on exit Fullscreen
+- [x] Podcast Thumbs overlay Half Click - !Bug
+- [x] Blog Post Actual Content
+- [x] Rebuild Navigation System
+- [x] Rebuild Blog Pages Markup
+- [x] Rebuild Blog Pages Wordpress
+- [x] contact-form events
+- [x] Podcasts Carousel add/remove source on Active
+- [x] Blog/Podcast text size on laptop & desktop
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] On scroll Sticky Nav
+- [ ] Blog/Podcast Final Tweaks
+- [ ] Social OG Images
+- [ ] Inch-worm Dots v2
+- [ ] SEO Meta Content - Round 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+.modal-jobs {
+	padding: 20px;
+	overflow:  hidden;
+}
+
+.modal-jobs .title {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	line-height: 1.1;
+}
+
+.modal-jobs .intro {
+	line-height: 1.75;
+}

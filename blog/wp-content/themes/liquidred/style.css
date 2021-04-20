@@ -1,0 +1,47 @@
+/*
+Theme Name: Liquid Red
+Theme URI: http://underscores.me/
+Author: Lazaro
+Author URI: https://lazaro.in
+Description: Custom Theme
+Version: 1.4.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: liquidred
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Liquid Red is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+@import url("/style.css");
+
+/*
+ * DISQUS Custom Styles
+ */
+
+#disqus_thread {
+	min-width: 320px;
+	margin-left: -10px;
+	background-color: #FFF;
+	padding: 5px 15px;
+}
+
+@media( min-width: 640px ){
+	#disqus_thread {
+		margin-left: 0px;
+		padding: 10px 25px;
+	}
+}
+
+@media( min-width: 1380px ){
+	#disqus_thread {
+		padding: 20px 35px;
+	}
+}

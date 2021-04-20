@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /demo/
+Disallow: /server/
+
+User-agent:Googlebot
+Allow: /
+Disallow: /demo/
+Disallow: /server/
+
+Sitemap: https://lazaro.in/sitemap.xml
