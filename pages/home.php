@@ -231,33 +231,38 @@
 		<div class="container">
 			<!-- Contact -->
 			<div class="contact row">
-				<div class="columns small-10 small-offset-1 medium-12 medium-offset-0 large-10 large-offset-1">
+				<div class="columns small-12 large-10 large-offset-1">
 					<span class="heading h2">Contact Us</span>
 				</div>
-				<div class="columns small-10 small-offset-1 medium-7 medium-offset-0 large-6 large-offset-1">
-					<a class="button block fill-gradient-liquid-red" href="mailto:sonia@lazaro.in?subject=Request: Schedule a 20 Minute Call&body=Hi Sonia..." target="_Blank">
-						<span>Schedule A 20 Minute Call</span>
-						<img alt="Icon Call" src="/img/button-icon-call.svg">
-					</a>
+				<div class="columns small-12 large-10 large-offset-1">
 					<span class="h4 excerpt text-off-red">
 						We realise the importance of connecting you directly to an expert. Lets quickly exchange context, establish your requirement and recommend the best course of action.
 					</span>
 				</div>
-				<div class="contact-links columns small-10 small-offset-1 medium-4 medium-offset-1">
-					<a class="h3 email block text-off-light" href="mailto:sonia@lazaro.in?subject=Request: Schedule a 20 Minute Call&body=Hi Sonia...">sonia@lazaro.in</a>
-					<a class="h3 phone block text-off-light" href="tel:+919590941221">+91 95909 41221</a>
-				</div>
-			</div>
-			<div class="contact row">
-				<div class="columns small-12 medium-12 large-12">
-					<form class="js_contact_form" onsubmit="event.preventDefault()">
-						<input type="text" name="name" id="js_form_input_name">
-						<input type="text" name="email" id="js_form_input_email">
-						<input type="text" name="organization" id="js_form_input_organization">
-						<textarea name="message" class="js_wysiwyg" id="js_form_input_message"></textarea>
-						<div class="form-row space-min-bottom">
-							<label for="">
-								<span class="small text-uppercase line-height-xlarge opacity-50 cursor-pointer">Phone</span><br>
+				<div class="contact-form columns small-12 large-10 large-offset-1" style="margin-top: 30px;">
+					<form class="js_contact_form row" onsubmit="event.preventDefault()">
+						<!-- <div class="form-row columns small-12 medium-6"></div> -->
+						<div class="form-row columns small-12 medium-6 medium-space-right-min">
+							<label>								
+								<span class="form-label small strong block cursor-pointer text-uppercase">Full Name <span class="ast text-red">&nbsp;&midast;</span></span>
+								<input type="text" class="block" name="name" id="js_form_input_name">
+							</label>
+						</div>
+						<div class="form-row columns small-12 medium-6 medium-space-left-min">
+							<label>								
+								<span class="form-label small strong block cursor-pointer text-uppercase">Company</span>
+								<input type="text" class="block" name="organization" id="js_form_input_organization">
+							</label>
+						</div>
+						<div class="form-row columns small-12 medium-6 medium-space-right-min">
+							<label>								
+								<span class="form-label small strong block cursor-pointer text-uppercase">Email ID <span class="ast text-red">&nbsp;&midast;</span></span>
+								<input type="text" class="block" name="email" id="js_form_input_email">
+							</label>
+						</div>						
+						<div class="form-row columns small-12 medium-6 medium-space-left-min">
+							<label for="js_form_input_phone">
+								<span class="form-label small strong block cursor-pointer text-uppercase">Phone Number <span class="ast text-red">&nbsp;&midast;</span></span>
 								<div style="position: relative; display: flex">
 									<select class="js_phone_country_code" style="position: absolute; top: 0; left: 0; background-color: transparent; color: transparent; width: 26%;">
 										<?php include __DIR__ . '/../inc/phone-country-codes.php' ?>
@@ -267,32 +272,51 @@
 								</div>
 							</label>
 						</div>
-						<input type="checkbox" name="get-notified-of-updates" id="js_form_input_notify_updates">
-						<button type="submit">Get Details</button>
+						<div class="form-row columns small-12">
+							<label>								
+								<span class="form-label small strong block cursor-pointer text-uppercase">Your Requirements</span>
+								<textarea name="message" class="js_wysiwyg" id="js_form_input_message"></textarea>
+							</label>
+						</div>
+						<!-- <input type="checkbox" name="get-notified-of-updates" id="js_form_input_notify_updates"> -->
+						<div class="form-row columns small-12 medium-6">
+							<label>								
+								<span class="form-label small strong block cursor-pointer text-uppercase invisible">Submit</span>
+								<button type="submit" class="button block fill-gradient-liquid-off-red">Send Enquiry <img alt="Icon Call" src="/img/button-icon-email.svg"></button>
+							</label>
+						</div>						
 					</form>
-					<form class="form form-dark js_otp_form" onsubmit="event.preventDefault()">
-						<div class="form-row space-min-bottom">
+					<form class="js_otp_form row" onsubmit="event.preventDefault()">
+						<div class="form-row columns small-12 medium-8 medium-space-right-min">
 							<label for="">
-								<span class="small text-uppercase line-height-xlarge opacity-50 cursor-pointer">We've sent you an OTP. Kindly provide it below.</span><br>
+								<span class="form-label small strong block text-uppercase">We have sent you an OTP. Kindly enter it below. <span class="ast text-red">&nbsp;&midast;</span></span>
 								<input class="block" type="text" name="otp" id="">
 							</label>
-							<span class="small text-uppercase line-height-small opacity-50 cursor-pointer js_resend_otp hidden">Re-send OTP</span>
-							<span class="small text-uppercase line-height-small opacity-50 cursor-pointer js_try_different_number hidden">Try a different number</span>
+							<div class="clearfix" style="padding-top: 5px;">
+								<span class="small inline cursor-pointer text-off-red strong text-uppercase float-left js_resend_otp">Re-send OTP</span>
+								<span class="small inline cursor-pointer text-off-red strong text-uppercase float-right js_try_different_number">Try a different number</span>
+							</div>
 						</div>
-						<div class="form-row space-min-bottom">
+						<div class="form-row columns small-12 medium-4 medium-space-left-min">
 							<label for="">
-								<span class="small text-uppercase line-height-xlarge opacity-50 cursor-pointer">Submit</span><br>
-								<button class="button fill-red-2" type="submit">Verify OTP</button>
+								<span class="form-label small strong block cursor-pointer text-uppercase invisible">Submit</span>
+								<button class="button block fill-gradient-liquid-off-red" type="submit">Verify OTP</button>
 							</label>
 						</div>
 					</form>
+					<div class="form-row columns small-12 medium-6">
+						<a class="button block fill-gradient-liquid-red" href="tel:+919590941221" style="margin-top: 30px;">
+							<span>Or Call +91-95909-41221</span>
+							<img alt="Icon Call" src="/img/button-icon-call.svg">
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section><!-- END : Contact Section -->
 
 	<!-- Jobs Section -->
-	<section id="jobs" class="jobs-section fill-light">
+	<section id="jobs" class="hidden jobs-section fill-light">
 		<div class="container">
 			<!-- Jobs -->
 			<div class="jobs row">
