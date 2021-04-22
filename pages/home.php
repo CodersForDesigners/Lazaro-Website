@@ -234,7 +234,7 @@
 				<div class="columns small-12 large-10 large-offset-1">
 					<span class="heading h2">Contact Us</span>
 				</div>
-				<div class="columns small-12 large-10 large-offset-1">
+				<div class="columns small-12 medium-9 large-7 large-offset-1">
 					<span class="h4 excerpt text-off-red">
 						We realise the importance of connecting you directly to an expert. Lets quickly exchange context, establish your requirement and recommend the best course of action.
 					</span>
@@ -277,8 +277,20 @@
 								<span class="form-label small strong block cursor-pointer text-uppercase">Your Requirements</span>
 								<textarea name="message" class="js_wysiwyg" id="js_form_input_message"></textarea>
 							</label>
+							<br>
 						</div>
-						<!-- <input type="checkbox" name="get-notified-of-updates" id="js_form_input_notify_updates"> -->
+						<div class="form-row columns small-12">
+							<span class="form-label small strong block text-uppercase">How would you like to receive updates regarding your enquiry?</span>
+							<label class="inline">
+								<input class="inline-middle" type="radio" checked="" name="get-notified-of-updates" id="js_form_input_notify_updates_sms">
+								<span class="small strong inline-middle text-off-red text-uppercase cursor-pointer">SMS</span>
+							</label><br>
+							<label class="inline">
+								<input class="inline-middle" type="radio" name="get-notified-of-updates" id="js_form_input_notify_updates_wa">
+								<span class="small strong inline-middle text-off-red cursor-pointer">WhatsApp</span>
+							</label>
+						</div>
+
 						<div class="form-row columns small-12 medium-6">
 							<label>								
 								<span class="form-label small strong block cursor-pointer text-uppercase invisible">Submit</span>
