@@ -7,6 +7,9 @@ RewriteEngine On
 RewriteCond "%{DOCUMENT_ROOT}%{REQUEST_URI}" -f
 RewriteRule .? "-" [QSA,L]
 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^/?track/.* pages/track.php [NC,QSA,L]
+
 RewriteRule ^sitemap(-+([a-zA-Z0-9_-]+))?\.xml(\.gz)?$ /blog/sitemap$1.xml$2 [L]
 
 # if the URI does not have a trailing slash,
