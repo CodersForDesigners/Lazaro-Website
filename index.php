@@ -93,7 +93,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="/style.css?v=20171219">
+	<?php require_once __DIR__ . '/style.php' ?>
 
 	<!-- Slick CSS -->
 	<link rel="stylesheet" type="text/css" href="/plugins/slick/slick.css"/>
@@ -155,10 +155,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</section>
 
 		<!-- Intro Video JS -->
-		<script type="text/javascript" src="/js/modules/intro_video.js"></script>
+		<script type="text/javascript" src="/js/modules/intro_video.js?<?= $ver ?>"></script>
 
 		<!-- Animated Headline JS -->
-		<script type="text/javascript" src="/plugins/animated-headline/js/main.js"></script>
+		<script type="text/javascript" src="/plugins/animated-headline/js/main.js?<?= $ver ?>"></script>
 
 	<?php } else { ?>
 
@@ -331,7 +331,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Slick JS -->
 <script type="text/javascript" src="/plugins/slick/slick.min.js"></script>
-<script type="text/javascript" src="/js/modules/slick_podcast.js"></script>
+<script type="text/javascript" src="/js/modules/slick_podcast.js?<?= $ver ?>"></script>
 
 <script type="text/javascript">
 
