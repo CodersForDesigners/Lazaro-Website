@@ -317,8 +317,8 @@
 						</div>
 					</form>
 					<div class="form-row columns small-12 medium-6">
-						<a class="button block fill-gradient-liquid-red" href="tel:+919590941221" style="margin-top: 30px;">
-							<span>Or Call +91-95909-41221</span>
+						<a class="button block fill-gradient-liquid-red" href="tel:+918047166471" style="margin-top: 30px;">
+							<span>Or Call 080-47166471</span>
 							<img alt="Icon Call" src="/img/button-icon-call.svg">
 						</a>
 					</div>
