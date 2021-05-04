@@ -820,6 +820,9 @@
 }
 
 .home-page .contact-section .contact .contact-form {}
+.home-page .contact-section .contact .contact-form .hide-initially {
+	display: none;
+}
 .home-page .contact-section .contact .contact-form .form-row {
 	margin-bottom: 5px;
 }

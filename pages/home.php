@@ -227,7 +227,7 @@
 	</section><!-- END : Podcast Section -->
 
 	<!-- Contact Section -->
-	<section id="contact" class="contact-section fill-dark">
+	<section id="contact" class="contact-section fill-dark js_contact_form_section">
 		<div class="container">
 			<!-- Contact -->
 			<div class="contact row">
@@ -239,8 +239,8 @@
 						We realise the importance of connecting you directly to an expert. Lets quickly exchange context, establish your requirement and recommend the best course of action.
 					</span>
 				</div>
-				<div class="contact-form columns small-12 large-10 large-offset-1" style="margin-top: 30px;">
-					<form class="js_contact_form row" onsubmit="event.preventDefault()">
+				<div class="columns small-12 large-10 large-offset-1" style="position: relative; margin-top: 30px;">
+					<form class="contact-form row js_contact_form" onsubmit="event.preventDefault()" data-context="Contact Us Form">
 						<!-- <div class="form-row columns small-12 medium-6"></div> -->
 						<div class="form-row columns small-12 medium-6 medium-space-right-min">
 							<label>								
@@ -272,21 +272,21 @@
 								</div>
 							</label>
 						</div>
-						<div class="form-row columns small-12">
-							<label>								
+						<div class="form-row columns small-12 hide-initially">
+							<label>
 								<span class="form-label small strong block cursor-pointer text-uppercase">Your Requirements</span>
 								<textarea name="message" class="js_wysiwyg" id="js_form_input_message"></textarea>
 							</label>
 							<br>
 						</div>
-						<div class="form-row columns small-12">
+						<div class="form-row columns small-12 hide-initially">
 							<span class="form-label small strong block text-uppercase">How would you like to receive updates regarding your enquiry?</span>
 							<label class="inline">
-								<input class="inline-middle" type="radio" checked="" name="get-notified-of-updates" id="js_form_input_notify_updates_sms">
+								<input class="inline-middle" type="radio" name="get-notified-of-updates" value="SMS" id="js_form_input_notify_updates_sms">
 								<span class="small strong inline-middle text-off-red text-uppercase cursor-pointer">SMS</span>
 							</label><br>
 							<label class="inline">
-								<input class="inline-middle" type="radio" name="get-notified-of-updates" id="js_form_input_notify_updates_wa">
+								<input class="inline-middle" type="radio" name="get-notified-of-updates" value="WhatsApp" id="js_form_input_notify_updates_wa">
 								<span class="small strong inline-middle text-off-red cursor-pointer">WhatsApp</span>
 							</label>
 						</div>
@@ -298,13 +298,13 @@
 							</label>
 						</div>						
 					</form>
-					<form class="js_otp_form row" onsubmit="event.preventDefault()">
+					<form class="row otp-form js_otp_form" onsubmit="event.preventDefault()" style="display: none">
 						<div class="form-row columns small-12 medium-8 medium-space-right-min">
 							<label for="">
 								<span class="form-label small strong block text-uppercase">We have sent you an OTP. Kindly enter it below. <span class="ast text-red">&nbsp;&midast;</span></span>
-								<input class="block" type="text" name="otp" id="">
+								<input class="block" type="text" name="otp" id="js_form_input_otp">
 							</label>
-							<div class="clearfix" style="padding-top: 5px;">
+							<div class="clearfix hidden" style="padding-top: 5px;">
 								<span class="small inline cursor-pointer text-off-red strong text-uppercase float-left js_resend_otp">Re-send OTP</span>
 								<span class="small inline cursor-pointer text-off-red strong text-uppercase float-right js_try_different_number">Try a different number</span>
 							</div>

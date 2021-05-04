@@ -8,6 +8,8 @@
 	// get info on the request
 	list( $viewName, $viewPath ) = require "server/pageless.php";
 
+	$ver = 'v=20210504_1';
+
 ?>
 
 <!DOCTYPE html>
@@ -315,13 +317,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <!-- JS Modules -->
-<script type="text/javascript" src="/js/modules/pageless.js"></script>
-<script type="text/javascript" src="/js/modules/video_embed.js"></script>
-<script type="text/javascript" src="/js/modules/modal_box.js"></script>
-<script type="text/javascript" src="/js/modules/smoothscroll.js"></script>
-<script type="text/javascript" src="/js/modules/forms.js"></script>
-<script type="text/javascript" src="/js/form.js"></script>
-<script type="text/javascript" src="/js/modules/phone-country-code.js"></script>
+<script type="text/javascript" src="/plugins/base64/js-base64-v3.6.0.min.js?<?= $ver ?>"></script>
+<script type="text/javascript" src="/js/modules/pageless.js?<?= $ver ?>"></script>
+<script type="text/javascript" src="/js/modules/video_embed.js?<?= $ver ?>"></script>
+<script type="text/javascript" src="/js/modules/modal_box.js?<?= $ver ?>"></script>
+<script type="text/javascript" src="/js/modules/smoothscroll.js?<?= $ver ?>"></script>
+<script type="text/javascript" src="/js/modules/forms.js?<?= $ver ?>"></script>
+<script type="text/javascript" src="/js/contact_form_ui.js?<?= $ver ?>"></script>
+<script type="text/javascript" src="/js/modules/cupid/utils.js?<?= $ver ?>"></script>
+<script type="text/javascript" src="/js/modules/cupid/user.js?<?= $ver ?>"></script>
+<script type="text/javascript" src="/js/modules/phone-country-code.js?<?= $ver ?>"></script>
+<script type="text/javascript" src="/js/intercept-form-with-login-prompt.js?<?= $ver ?>"></script>
 
 <!-- Slick JS -->
 <script type="text/javascript" src="/plugins/slick/slick.min.js"></script>
@@ -361,6 +367,27 @@ $(document).ready(function(){
 	 */
 	var menu_items = $('.header-section .js_menu').html();
 	$('.modal-box .js_mobile_menu_destination').html(menu_items);
+
+
+	/*
+	 *
+	 * Tell to Cupid that the user dropped by
+	 *
+	 */
+	$( function () {
+
+		var user = __CUPID.utils.getUser();
+		if ( user ) {
+			setTimeout( function () {
+				__CUPID.utils.getAnalyticsId()
+					.then( function ( deviceId ) {
+						user.hasDeviceId( deviceId );
+						user.isOnWebsite();
+					} )
+			}, 1500 );
+		}
+
+	} );
 
 });
 
